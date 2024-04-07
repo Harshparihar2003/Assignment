@@ -7,7 +7,7 @@ Node.js for high performance event-driven server
 Express.js
 MongoDb for datastore
 
-#Installation
+##Installation
 
 1.Clone/Download the repo.
 2.Run npm install.
