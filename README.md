@@ -28,10 +28,10 @@ Creates a new user with the provided details.
 - #### Sample Request:
 ```json
 {
-  "name": "John Doe",
+  "name": "Harsh Singh",
   "DOB": "2003/08/03",
   "age": 21,
-  "location": "New York"
+  "location": "Chennai"
 }
 ```
 
@@ -44,10 +44,10 @@ Retrieves an array of all users.
 [
   {
     "_id": "60a273373495a14f08d2b242",
-    "name": "John Doe",
+    "name": "Harsh Singh",
     "DOB": "2003-08-03T00:00:00.000Z",
     "age": 21,
-    "location": "New York",
+    "location": "Chennai",
     "__v": 0
   },
   
@@ -58,7 +58,7 @@ Retrieves an array of all users.
 Retrieves an array of all user names.
 #### Sample Response:
 ```json
-["John Doe", "Jane Smith", "Alice Johnson", ...]
+["Harsh Singh", "Rishi", "Avinash", ...]
 ```
 ### 4. GET /api/user/singe-user/:id
 
