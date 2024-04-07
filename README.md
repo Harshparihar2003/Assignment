@@ -16,7 +16,7 @@ The software stack I choose is:
 
 ## Endpoints
 
-### 1. POST /create-user
+### 1. POST /api/user/create-user
 Creates a new user with the provided details.
 
 #### Request Body:
@@ -35,7 +35,7 @@ Creates a new user with the provided details.
 }
 ```
 
-### 1.  GET /alluser
+### 2.  GET /api/user/alluser
 
 Retrieves an array of all user names.
 
@@ -59,5 +59,83 @@ Retrieves an array of all user names.
 #### Sample Response:
 ```json
 ["John Doe", "Jane Smith", "Alice Johnson", ...]
+```
+### 4. GET /api/user/singe-user/:id
+
+Retrieves a single user from the database if it exist.
+
+#### Sample Response:
+```json
+{
+  "_id": "66124c9e9ee322870d71eaca",
+  "name": "harsh singh",
+  "age": 15,
+  "DOB": "2003-08-03T00:00:00.000Z",
+  "location": "Delhi",
+  "__v": 0
+}
+```
+5. POST /api/user/existence
+
+Checks if a user with specific name exists or not and sends response in boolean.
+
+#### Sample Request:
+```json
+{
+  "name" : "harsh singh"
+}
+```
+#### Sample Response:
+```json
+{
+  "exists": true
+}
+```
+6. POST /api/user/age
+
+It retrieves all the users above a specific age.
+
+#### Sample Request:
+```json
+{
+  "age" : 15
+}
+```
+#### Sample Response:
+```json
+[
+  {
+    "_id": "661239738d8a8fb2e5d9dd11",
+    "name": "Harsh",
+    "age": 25,
+    "DOB": "2024-04-07T06:12:05.833Z",
+    "location": "New York",
+    "__v": 0
+  },
+  {
+    "_id": "6612397b8d8a8fb2e5d9dd14",
+    "name": "Rishi",
+    "age": 20,
+    "DOB": "2024-04-07T06:12:05.833Z",
+    "location": "New York",
+    "__v": 0
+  },
+  {
+    "_id": "661241531cf4d9a4a4d49486",
+    "name": "Harsh singh",
+    "age": 30,
+    "DOB": "2003-08-03T00:00:00.000Z",
+    "location": "New York",
+    "__v": 0
+  },
+  {
+    "_id": "66124c9e9ee322870d71eaca",
+    "name": "harsh singh",
+    "age": 15,
+    "DOB": "2003-08-03T00:00:00.000Z",
+    "location": "Delhi",
+    "__v": 0
+  }
+]
 ```
 
