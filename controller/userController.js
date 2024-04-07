@@ -1,18 +1,18 @@
 const asyncHandler = require("express-async-handler");
 const User = require("../models/userModel");
 
-
 // Create a user
 const createUser = asyncHandler(async (req, res) => {
-    const {name, DOB} = req.body;
+    const {name, DOB, age, location} = req.body;
 
+    const dobDate = new Date(DOB.replace(/\//g, '-'));
+    
     // Checking if a user is already exist or not
-    const findUser = await User.findOne({ name: name });
+    const findUser = await User.findOne({ name: name});
 
     if (!findUser) {
-        
         // Create a new user
-        const newUser = await User.create(req.body);
+        const newUser = await User.create({name, DOB: dobDate,age,location});
         res.send(newUser);
     }
     else {
