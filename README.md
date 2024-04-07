@@ -7,7 +7,7 @@ Node.js for high performance event-driven server
 Express.js
 MongoDb for datastore
 
-##Installation
+## Installation
 
 1.Clone/Download the repo.
 2.Run npm install.
@@ -25,8 +25,7 @@ Creates a new user with the provided details.
 - age: Number (required)
 - location: String (required)
 
-
-#### Sample Request:
+- #### Sample Request:
 ```json
 {
   "name": "John Doe",
@@ -34,3 +33,22 @@ Creates a new user with the provided details.
   "age": 21,
   "location": "New York"
 }
+
+### 1.  GET /alluser
+
+Retrieves an array of all user names.
+
+#### Sample Response:
+```json
+[
+  {
+    "_id": "60a273373495a14f08d2b242",
+    "name": "John Doe",
+    "DOB": "2003-08-03T00:00:00.000Z",
+    "age": 21,
+    "location": "New York",
+    "__v": 0
+  },
+  // Other user objects...
+]
+
