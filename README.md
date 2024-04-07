@@ -3,16 +3,16 @@
 This project implements a backend API gateway for managing user data. It provides various endpoints for creating, retrieving, and managing user information.
 The software stack I choose is:
 
-Node.js for high performance event-driven server
-Express.js
-MongoDb for datastore
+- Node.js for high performance event-driven server
+- Express.js
+- MongoDb for datastore
 
 ## Installation
 
-1.Clone/Download the repo.
-2.Run npm install.
-3.Config the mongodb url with your mongo url.
-4.Run nodemon index.js to spin the up the local dev server port 5000.(http://localhost:5000).
+- 1.Clone/Download the repo.
+- 2.Run npm install.
+- 3.Config the mongodb url with your mongo url.
+- 4.Run nodemon index.js to spin the up the local dev server port 5000.(http://localhost:5000).
 
 ## Endpoints
 
