@@ -9,10 +9,10 @@ The software stack I choose is:
 
 ## Installation
 
-- 1.Clone/Download the repo.
-- 2.Run npm install.
-- 3.Config the mongodb url with your mongo url.
-- 4.Run nodemon index.js to spin the up the local dev server port 5000.(http://localhost:5000).
+- 1. Clone/Download the repo.
+- 2. Run npm install.
+- 3. Config the mongodb url with your mongo url.
+- 4. Run nodemon index.js to spin the up the local dev server port 5000.(http://localhost:5000).
 
 ## Endpoints
 
@@ -33,6 +33,7 @@ Creates a new user with the provided details.
   "age": 21,
   "location": "New York"
 }
+```
 
 ### 1.  GET /alluser
 
@@ -51,4 +52,12 @@ Retrieves an array of all user names.
   },
   // Other user objects...
 ]
+```
+### 3. GET /all-usernames
+
+Retrieves an array of all user names.
+#### Sample Response:
+```json
+["John Doe", "Jane Smith", "Alice Johnson", ...]
+```
 
