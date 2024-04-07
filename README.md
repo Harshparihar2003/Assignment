@@ -37,7 +37,7 @@ Creates a new user with the provided details.
 
 ### 2.  GET /api/user/alluser
 
-Retrieves an array of all user names.
+Retrieves an array of all users.
 
 #### Sample Response:
 ```json
@@ -50,7 +50,7 @@ Retrieves an array of all user names.
     "location": "New York",
     "__v": 0
   },
-  // Other user objects...
+  
 ]
 ```
 ### 3. GET /all-usernames
@@ -75,7 +75,7 @@ Retrieves a single user from the database if it exist.
   "__v": 0
 }
 ```
-5. POST /api/user/existence
+### 5. POST /api/user/existence
 
 Checks if a user with specific name exists or not and sends response in boolean.
 
@@ -91,7 +91,7 @@ Checks if a user with specific name exists or not and sends response in boolean.
   "exists": true
 }
 ```
-6. POST /api/user/age
+### 6. POST /api/user/age
 
 It retrieves all the users above a specific age.
 
